@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import ReactQuill, { Quill } from "react-quill";
+import { useCallback } from "react";
+import { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
 const TextEditor = () => {
-  const [value, setValue] = useState("");
   const toolbarOptions = [
     ["bold", "italic", "underline"], // toggled buttons
     ["blockquote", "code-block"], // custom button values
